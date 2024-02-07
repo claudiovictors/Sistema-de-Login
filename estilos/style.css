@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #68b6f7;
+}
+
+.conteudo {
+    width: 400px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 8px 0 rgba(0,0,0,.128);
+}
+
+.conteudo .cabecalho {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.conteudo .cabecalho h1 {
+    color: #444;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.conteudo .mensagens-erros {
+    display: none;
+    color: #DE6666;
+    font-size: 1em;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #DE6666;
+    background-color: #FCCECE;
+}
+
+.conteudo form {
+    margin-top: 15px;
+}
+
+.conteudo form .nomes-detalhes {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo form .linhas {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.conteudo form .linhas label {
+    color: #333;
+    font-size: 0.9em;
+    margin-bottom: 3px;
+}
+
+.conteudo form .linhas input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.conteudo form .linhas i {
+    position: absolute;
+    top: 68%;
+    right: 15px;
+    color: #ccc;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.conteudo form .linhas i.ativado {
+    color: #444;
+}
+
+.conteudo form .linhas button {
+    border: none;
+    height: 45px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #68b6f7;
+}
+
+.conteudo .link {
+    color: #222;
+    font-size: 17px;
+    text-align: center;
+}
+
+.conteudo .link a {
+    color: #333;
+}
+
+.conteudo .link a:hover {
+    color: #555;
+    text-decoration: underline;
+}
